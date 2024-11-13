@@ -1,0 +1,226 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+#contenedor-global {
+  overflow-x: hidden;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 80px;
+  background-color: #FE7000;
+  height: 90px;
+}
+#header img {
+  height: 100%;
+}
+#header nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+#header nav span {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#seccion-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 90vh;
+  position: relative;
+}
+#seccion-principal #contenedor-img-principal {
+  position: absolute;
+  width: 50%;
+  aspect-ratio: 1/1;
+  top: 30px;
+  right: -50px;
+  overflow: hidden;
+  background-color: #222222;
+  border-radius: 50%;
+}
+#seccion-principal #contenedor-img-principal img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#contenedor-texto {
+  width: 60%;
+  padding: 30px 0 0 30px;
+}
+#contenedor-texto h2 {
+  font-size: 78px;
+}
+#contenedor-texto p {
+  margin-top: 30px;
+  font-size: 25px;
+  color: #939393;
+  font-weight: 300;
+  width: 70%;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+#texto-fuerza {
+  color: #FE7000;
+  font-size: 86px;
+}
+
+#texto-vida {
+  color: #FF006E;
+  font-size: 86px;
+}
+
+.contenedor-redes {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 80px;
+}
+.contenedor-redes div {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.contenedor-redes div:hover {
+  background-color: black;
+}
+.contenedor-redes div:hover i {
+  color: white;
+}
+.contenedor-redes div i {
+  font-size: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+#seccion-comentarios {
+  background: linear-gradient(to right, #FE7000, #FF0000);
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 20;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  gap: 30px;
+}
+#seccion-comentarios #barra {
+  position: absolute;
+  width: 80%;
+  height: 20px;
+  background-color: #222222;
+  z-index: 25;
+}
+#seccion-comentarios .tarjeta {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  z-index: 30;
+  height: 240px;
+  padding: 80px 40px 40px 40px;
+}
+#seccion-comentarios .tarjeta img {
+  position: absolute;
+  width: 100px;
+  top: -50px;
+  left: 20px;
+}
+#seccion-comentarios .tarjeta .nombre {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+#seccion-comentarios .tarjeta .comentario {
+  color: #939393;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: 19px;
+}
+#seccion-comentarios .tarjeta:nth-child(2) {
+  margin-bottom: 80px;
+}
+#seccion-comentarios .tarjeta:nth-child(4) {
+  margin-top: 80px;
+}
+
+footer {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  height: 60vh;
+}
+footer #contenedor-logo-redes {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #contenedor-logo-redes img {
+  width: 200px;
+}
+footer #contenedor-logo-redes .contenedor-redes {
+  margin: 30px 0 0 0;
+}
+footer #contenedor-logo-redes .contenedor-redes div {
+  background-color: #D9D9D9;
+  transition: all 0.2s ease-in-out;
+}
+footer #contenedor-logo-redes .contenedor-redes div:hover {
+  background-color: black;
+}
+footer #contenedor-logo-redes .contenedor-redes div:hover i {
+  color: white;
+}
+footer #contenedor-logo-redes .contenedor-redes div i {
+  font-size: 30px;
+  transition: all 0.2s ease-in-out;
+  color: #222222;
+}
+footer #contenedor-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+footer #contenedor-menu .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer #contenedor-menu .menu h2 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 25px;
+}
+footer #contenedor-menu .menu h4 {
+  color: #939393;
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+footer #contenedor-menu .menu h4:hover {
+  color: white;
+}/*# sourceMappingURL=inicio.css.map */
